@@ -18,4 +18,5 @@ bundle install --path vendor/bundle
 
 rake db:migrate
 rake db:seeds
-
+(rake db:populate)
+rake test:prepare
