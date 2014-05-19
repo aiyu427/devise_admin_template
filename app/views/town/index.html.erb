@@ -1,0 +1,14 @@
+<% provide(:title, "建設タウン") %>
+<h1>建設タウン</h1>
+<div id="town_left">
+  
+</div>
+<div id="town_right">
+  <div id="user_info">
+    <% if signed_in? %>
+      <%= render 'shared/user_info' %>
+    <% else %>
+      ログインしてください
+    <% end %>
+  </div>
+</div>

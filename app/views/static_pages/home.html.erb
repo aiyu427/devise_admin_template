@@ -1,0 +1,20 @@
+<% if user_signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+  <div class="center hero-unit">
+    <h1>現場の窓口</h1>
+
+    <h2>
+      管工事の現場に関する情報をなんでも取得
+    </h2>
+
+    <%= link_to "会員登録はこちら", new_user_registration_path, class: "btn btn-large btn-primary" %>
+  </div>
+
+<% end %>
