@@ -1,4 +1,4 @@
-DeviceAdminTemplate::Application.routes.draw do
+DeviseAdminTemplate::Application.routes.draw do
   devise_for :admins, :controllers => { 
     :sessions => "admins/sessions"
   }

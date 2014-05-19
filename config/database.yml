@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   encodint: unicode
-  database: test_aaa_development
+  database: devise_admin_template_development
   username: luxiar
   password: luxiar
 
@@ -19,7 +19,7 @@ development:
 test:
   adapter: postgresql
   encodint: unicode
-  database: test_aaa_test
+  database: devise_admin_template_test
   username: luxiar
   password: luxiar
 

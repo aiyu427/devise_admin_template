@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-DeviceAdminTemplate::Application.config.secret_key_base = 'e03e16c6be9fc05e31e5a1797fad3b5857e5575de312b2c811d4338bfe7d44310e8b7d4428cc1396dfd56598263a0d2b5b68c541cac9c691b100ec4c77cc49de'
+DeviseAdminTemplate::Application.config.secret_key_base = 'e03e16c6be9fc05e31e5a1797fad3b5857e5575de312b2c811d4338bfe7d44310e8b7d4428cc1396dfd56598263a0d2b5b68c541cac9c691b100ec4c77cc49de'

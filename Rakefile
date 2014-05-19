@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-DeviceAdminTemplate::Application.load_tasks
+DeviseAdminTemplate::Application.load_tasks
