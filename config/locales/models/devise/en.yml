@@ -1,0 +1,13 @@
+en:
+  activerecord:
+    models:
+      user: "User"
+      admin: "Admin"
+    attributes:
+      user:
+        email: "Email"
+        password: "password"
+        password_confirmation: "password confirm"
+        rule_confirmed: "rule confirmed"
+        remember_me: "remember me"
+        current_password: "current password"

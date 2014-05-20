@@ -1,0 +1,11 @@
+ja:
+  default:
+    back: '戻る'
+    are_you_sure: '実行してよろしいですか？'
+    titles:
+      application: '現場の窓口'
+      town: '建設タウン'
+      help: 'ヘルプ'
+      what_application: '現場の窓口とは？'
+      company_info: '会社概要'
+      contact_us: 'お問い合わせ'

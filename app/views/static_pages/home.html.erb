@@ -8,13 +8,13 @@
   </div>
 <% else %>
   <div class="center hero-unit">
-    <h1>現場の窓口</h1>
+    <h1><%= t('default.titles.application') %></h1>
 
     <h2>
-      管工事の現場に関する情報をなんでも取得
+      現場に関する情報はすべてお任せ
     </h2>
 
-    <%= link_to "会員登録はこちら", new_user_registration_path, class: "btn btn-large btn-primary" %>
+    <%= link_to t('user.sign_up', user_model_name: t('activerecord.models.user')), new_user_registration_path, class: "btn btn-large btn-primary" %>
   </div>
 
 <% end %>

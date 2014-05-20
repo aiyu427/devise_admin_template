@@ -10,8 +10,9 @@ gem 'faker-japanese'
 gem 'sprockets', '2.11.0'
 gem 'pg', '0.15.1'
 
-gem 'devise'
-gem 'rails_admin'
+gem 'devise', '3.2.4'
+gem 'rails_admin', '0.6.2'
+gem 'simple_form', '3.0.2'
 
 # will_paginateがいるとrails_adminで一覧表示できなくなる
 #gem 'will_paginate', '3.0.4'

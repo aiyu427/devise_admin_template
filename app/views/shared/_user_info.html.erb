@@ -1,6 +1,6 @@
 <span>
-  こんにちは <b><%= current_user.email %></b>さん
+  <b><%= current_user.email %></b>
 </span>
 <span>
-  <%= link_to "プロフィール", edit_user_registration_path %>
+  <%= link_to t('user.edit_user'), edit_user_registration_path %>
 </span>

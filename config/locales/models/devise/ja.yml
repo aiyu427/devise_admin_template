@@ -1,0 +1,20 @@
+ja:
+  activerecord:
+    models:
+      user: "アカウント"
+      admin: "管理者"
+    attributes:
+      user:
+        email: "Eメール"
+        password: "パスワード"
+        password_confirmation: "パスワード（再入力）"
+        rule_confirmed: "利用規約に同意"
+        remember_me: "ログインしたままにする"
+        current_password: "現在のパスワード"
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              not_found: '登録が見つかりません。'
+

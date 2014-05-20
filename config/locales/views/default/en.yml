@@ -1,0 +1,11 @@
+en:
+  default:
+    back: 'Back'
+    are_you_sure: 'Are you sure?'
+    titles:
+      application: 'Construction Window'
+      town: 'Construction Town'
+      help: 'Help'
+      what_application: "What's Construction Window"
+      company_info: 'Company Info'
+      contact_us: 'Contact Us'

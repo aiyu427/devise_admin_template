@@ -1,14 +1,14 @@
-<% provide(:title, "建設タウン") %>
-<h1>建設タウン</h1>
+<% provide(:title, t('default.titles.town')) %>
+<h2><%= t('default.titles.town') %></h2>
 <div id="town_left">
   
 </div>
 <div id="town_right">
   <div id="user_info">
-    <% if signed_in? %>
+    <% if user_signed_in? %>
       <%= render 'shared/user_info' %>
     <% else %>
-      ログインしてください
+      <%= link_to t('user.sign_in'), new_session_path('user'), class: 'btn btn-primary' %><br />
     <% end %>
   </div>
 </div>
