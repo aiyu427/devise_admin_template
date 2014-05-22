@@ -17,5 +17,6 @@ en:
     we_need_your_current_password_to_confirm_your_changes: "(we need your current password to confirm your changes)"
     cancel_my_account: "Cancel my account"
     edit_user: "Edit my account"
-
-    
+    change_your_password: Change your password
+    confirm_account: 'Confirm Account'
+    confirm_account_message: "You're almost done! Now create a password to securely access your account."

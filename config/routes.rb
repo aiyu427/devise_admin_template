@@ -7,8 +7,13 @@ DeviseAdminTemplate::Application.routes.draw do
   devise_for :users, :controllers => { 
     :sessions => "users/sessions",
     :registrations => "users/registrations",
+    :confirmations => "users/confirmations",
     :passwords => "users/passwords" 
   }
+  devise_scope :user do
+    patch "/users/confirm" => "users/confirmations#confirm"
+  end
+
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'

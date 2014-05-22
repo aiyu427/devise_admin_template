@@ -1,6 +1,6 @@
-<span>
-  <b><%= current_user.email %></b>
-</span>
-<span>
-  <%= link_to t('user.edit_user'), edit_user_registration_path %>
-</span>
+<div>
+  <b><%= current_user.nickname %> さん</b>
+</div>
+<div>
+  <%= link_to t('user.edit_user', user_model_name: t('activerecord.models.user')), edit_user_registration_path %>
+</div>

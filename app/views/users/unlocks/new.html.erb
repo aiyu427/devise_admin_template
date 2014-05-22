@@ -1,9 +1,9 @@
 <h2>Resend unlock instructions</h2>
 
-<%= simple_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+<%= simple_form_for(resource, as: resource_name, url: user_unlock_path(resource_name), html: { method: :post }) do |f| %>
   <%#= devise_error_messages! %>
 
-  <%= f.email_field :email %>
+  <%= f.input :email %>
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">

@@ -1,0 +1,11 @@
+<h2><%= t('user.confirm_account_message') %></h2>
+<%= simple_form_for(resource, as: resource_name, url: users_confirm_path) do |f| %>
+  <%= f.input :password %>
+  <%= f.input :password_confirmation %>
+  <%= f.input :confirmation_token, as: :hidden, :input_html => { value: @original_token } %>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit t('user.confirm_account'), class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>

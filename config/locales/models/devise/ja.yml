@@ -8,9 +8,20 @@ ja:
         email: "Eメール"
         password: "パスワード"
         password_confirmation: "パスワード（再入力）"
-        rule_confirmed: "利用規約に同意"
         remember_me: "ログインしたままにする"
         current_password: "現在のパスワード"
+        nickname: 'ニックネーム'
+        firstname: '姓'
+        lastname: '名'
+        firstname_kana: 'セイ'
+        lastname_kana: 'メイ'
+        tel: '電話番号'
+        sex: '性別'
+        post_code: '郵便番号'
+        address1: '住所１'
+        address2: '住所２'
+        birthday: '生年月日'
+        rule_confirmed: "利用規約に同意"
     errors:
       models:
         user:

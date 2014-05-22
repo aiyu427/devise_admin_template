@@ -9,5 +9,23 @@ en:
         password: "password"
         password_confirmation: "password confirm"
         rule_confirmed: "rule confirmed"
-        remember_me: "remember me"
         current_password: "current password"
+        nickname: 'nickname'
+        firstname: 'firstname'
+        lastname: 'lastname'
+        firstname_kana: 'firstname_kana'
+        lastname_kana: 'lastname_kana'
+        tel: 'tel'
+        sex: 'sex'
+        post_code: 'post_code'
+        address1: 'address1'
+        address2: 'address2'
+        birthday: 'birthday'
+        remember_me: "remember me"
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              not_found: 'not found'
+
