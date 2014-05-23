@@ -27,5 +27,12 @@ ja:
         user:
           attributes:
             email:
+              already_confirmed: "既に登録済みですのでログインしてください"
+              confirmation_period_expired: "確認期限が切れました。%{period}以内に確認する必要があります。 新しくリクエストしてください"
+              expired: "期限が切れましたので、新しくリクエストしてください"
               not_found: '登録が見つかりません。'
+              not_locked: "凍結されていません"
+              not_saved:
+                one: "1つのエラーにより%{resource}を保存できませんでした。"
+                other: "%{count}つのエラーにより%{resource}を保存できませんでした。"
 
