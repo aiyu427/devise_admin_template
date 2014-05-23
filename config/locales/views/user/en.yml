@@ -20,3 +20,4 @@ en:
     change_your_password: Change your password
     confirm_account: 'Confirm Account'
     confirm_account_message: "You're almost done! Now create a password to securely access your account."
+    resend_confirmation_instructions_title: "Resend confirmation instructions"

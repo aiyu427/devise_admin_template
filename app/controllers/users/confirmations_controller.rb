@@ -1,8 +1,15 @@
 class Users::ConfirmationsController < Devise::ConfirmationsController
 
   def create
-    # ここから！
-    super
+    self.resource = resource_class.send_confirmation_instructions(resource_params)
+    yield resource if block_given?
+
+    if successfully_sent?(resource)
+      set_flash_message :notice, :"send_paranoid_instructions" 
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def show
