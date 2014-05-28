@@ -9,7 +9,6 @@ ja:
     resend_confirmation_instructions: '送信'
     confirm_my_account: 'アカウント確認'
     unlock_my_account: 'アカウントロック解除'
-    update: '更新'
     resend_unlock_instructions: 'ロック解除再送'
     did_not_receive_confirmation_instructions: '本人確認メール送信'
     did_not_receive_unlock_instructions: 'ロック解除メール送信'

@@ -4,20 +4,35 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :confirmable, #:lockable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  has_one :user_info
+  before_create :build_default_user_info
+
   validate :rule_confirmed_valid?
   validates :nickname, presence: true, uniqueness: true, length: {maximum: 30 }
 
   # アカウント本登録時のパスワード確認
-  def password_match?
-    self.errors[:password] << t('errors.blank') if password.blank?
-    self.errors[:password_confirmation] << t('errors.blank') if password_confirmation.blank?
-    self.errors[:password_confirmation] << t('errors.confirmation', attribute: t('activerecord.attributes.user.password')) if password != password_confirmation
-    password == password_confirmation && !password.blank?
-  end
+#  def password_match?
+#    self.errors[:password] << t('errors.blank') if password.blank?
+#    self.errors[:password_confirmation] << t('errors.blank') if password_confirmation.blank?
+#    self.errors[:password_confirmation] << t('errors.confirmation', attribute: t('activerecord.attributes.user.password')) if password != password_confirmation
+#    password == password_confirmation && !password.blank?
+#  end
 
   private
     def rule_confirmed_valid?
       errors.add(:rule_confirmed, '利用規約に同意して頂けない場合は、登録できません。') unless rule_confirmed == true
+    end
+
+    def build_default_user_info
+      build_user_info
+      true # Always return true in callbacks as the normal 'continue' state
+           # Assumes that the default_profile can **always** be created.
+           # or
+           # Check the validation of the profile. If it is not valid, then
+           # return false from the callback. Best to use a before_validation 
+           # if doing this. View code should check the errors of the child.
+           # Or add the child's errors to the User model's error array of the :base
+           # error item
     end
 
 end

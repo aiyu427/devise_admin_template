@@ -1,0 +1,21 @@
+en:
+  activerecord:
+    models:
+      user_info: "user info"
+    attributes:
+      user_info:
+        firstname: "firstname"
+        lastname: "lastname"
+        firstname_kana: "firstname_kana"
+        lastname_kana: "lastname_kana"
+        tel: "tel"
+        sex: "sex"
+        zip_code: "zip_code"
+        address1: "address1"
+        address2: "address2"
+        birthday: "birthday"
+  enumerize:
+    user_info:
+      sex:
+        male: "male"
+        female: "female"

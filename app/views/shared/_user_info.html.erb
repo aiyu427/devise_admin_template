@@ -4,3 +4,6 @@
 <div>
   <%= link_to t('user.edit_user', user_model_name: t('activerecord.models.user')), edit_user_registration_path %>
 </div>
+<div>
+  <%= link_to t('user_info.edit_user_info'), edit_user_infos_path, data: { no_turbolink: true } %>
+</div>

@@ -4,6 +4,7 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 gem 'bootstrap-sass', '3.1.1.0'
+gem 'bootstrap-datepicker-rails', '1.3.0.2'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
 gem 'faker-japanese'
@@ -19,6 +20,8 @@ gem 'simple_form', '3.0.2'
 #gem 'bootstrap-will_paginate', '0.0.10'
 # rails_adminを使う場合は、kaminariのページング
 gem 'kaminari'
+
+gem 'enumerize', '0.8.0'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do

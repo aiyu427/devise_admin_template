@@ -1,0 +1,21 @@
+ja:
+  activerecord:
+    models:
+      user_info: "ユーザー情報"
+    attributes:
+      user_info:
+        firstname: "姓"
+        lastname: "名"
+        firstname_kana: "セイ"
+        lastname_kana: "メイ"
+        tel: "電話番号"
+        sex: "性別"
+        zip_code: "郵便番号"
+        address1: "住所"
+        address2: "アパート名など"
+        birthday: "誕生日"
+  enumerize:
+    user_info:
+      sex:
+        male: "男"
+        female: "女"

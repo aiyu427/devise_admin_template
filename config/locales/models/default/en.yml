@@ -1,0 +1,6 @@
+en:
+  enumerize:
+    defaults:
+      sex:
+        male: "male"
+        female: "female"

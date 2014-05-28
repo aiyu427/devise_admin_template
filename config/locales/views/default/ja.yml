@@ -1,6 +1,7 @@
 ja:
   default:
     back: '戻る'
+    update: '更新'
     are_you_sure: '実行してよろしいですか？'
     titles:
       application: '現場の窓口'

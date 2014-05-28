@@ -1,0 +1,6 @@
+ja:
+  enumerize:
+    defaults:
+      sex:
+        male: "男"
+        female: "女"

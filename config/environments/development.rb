@@ -12,6 +12,7 @@ DeviseAdminTemplate::Application.configure do
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
+  config.action_controller.action_on_unpermitted_parameters = :raise
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
@@ -39,4 +40,5 @@ DeviseAdminTemplate::Application.configure do
     :authentication => :cram_md5,
     :enable_starttls_auto => true
   }
+
 end

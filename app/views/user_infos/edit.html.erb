@@ -1,0 +1,25 @@
+<h2><%= t('user.edit_user', user_model_name: t('activerecord.models.user')) %></h2>
+
+<%= simple_form_for(@user_info, url: user_infos_path, html: { method: :put }) do |f| %>
+  <%= f.input :firstname %>
+  <%= f.input :lastname %>
+
+  <%= f.input :firstname_kana %>
+  <%= f.input :lastname_kana %>
+
+  <%= f.input :tel %>
+  <%= f.input :sex, as: :radio_buttons, item_wrapper_class: "radio-inline" %>
+  <%= f.input :zip_code %>
+  <%= f.input :address1 %>
+  <%= f.input :address2 %>
+  <%= f.input :birthday, as: :bootstrap_datepicker %>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit t('default.update'), class: 'btn btn-primary' %>
+    </div>
+  </div>
+  
+<% end %>
+
+<%= link_to t('default.back'), :back %>
